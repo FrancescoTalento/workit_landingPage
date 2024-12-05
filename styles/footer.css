@@ -16,3 +16,8 @@ footer a:nth-child(-n+2){
     padding-right: 18px;
 
 }
+
+footer nav img:hover{
+    transform: scale(110%);
+    transition: 0.3s;
+}
