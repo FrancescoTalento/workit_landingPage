@@ -1,5 +1,8 @@
 @charset "UTF_8";
 
+img.background{
+    display: none;
+}
 
     header {
             background-color: var(--purple-900);
@@ -14,6 +17,7 @@
             background-position: center bottom;
             background-size: contain;
         }
+        
     
         header section:nth-child(1) {
             display: flex;
@@ -80,7 +84,63 @@
             transition: 0.4s, border 0s;
         }
 
-        
+
+@media screen and (min-width: 760px) {
+
+
+    header {
+            height: 540px;
+
+            z-index: 2;
+            background-image: url(../assets/images/header/oval-tablet.png);
+           
+        }
+    
+        header img.background{
+            display: block;
+            position: absolute;
+            z-index: 1;
+
+        }
+
+        img#left{
+            top: 50px;
+            left: -3%;
+            
+        }
+
+        img#right{
+            overflow: hidden;
+            left: 92.5%;
+            transform: translate();
+            margin-top: -220px;
+        }
+
+        header section:nth-child(1) {
+            padding: 32px 44px 0px 44px;
+        }
+    
+    
+        header section:nth-child(2) {
+            padding: 56px 20px 160px 20px;
+            text-align: center;
+        }
+    
+    
+        header h1 {
+            font-size: 60px;
+    
+        }
+    
+        header h1:nth-child(2) {
+            padding: 26px 0px 65px 0px;
+        }
+    
+        header section:nth-child(2) a {
+            font-size: 18px;
+        }
+    
+}
 
 
 
