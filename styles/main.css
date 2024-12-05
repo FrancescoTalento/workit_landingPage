@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 main{
-    padding: 0px 20px;
+
     color: var(--purple-900);
     font-family: var(--fonte-texto);
     
@@ -10,6 +10,20 @@ main{
 
 
 /* SECTION 1 */
+
+main section#one{
+    padding: 0px 20px;
+    background-image: url(../assets/images/main/ovalBG-phone.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    background-color: var(--purple-100);
+}
+
+main section#last{
+    padding: 0px 20px;
+    background-color: white
+}
 
 main img.webApp {
     width: 320px;
@@ -42,12 +56,15 @@ div.content:first-child{
 }
 
 div.content:last-child {
-    margin-bottom: 64px;
+    padding-bottom: 96px;
+    margin-bottom: 0px
 }
 
 aside.number{
     display: grid;
     place-items: center;
+
+    font-weight: bolder;
 
     width: 48px;
     height: 48px;
@@ -83,6 +100,8 @@ main section img.founder{
 
     display: flex;
     margin: auto;
+
+    padding-top: 112px;
     
     
 }
@@ -115,6 +134,7 @@ main div.about h2{
 main div.about p{
     font-family: var(--fonte-texto);
     font-size: 16px;
+    line-height: 180%;
     padding-bottom: 32px;
 }
 
@@ -122,6 +142,7 @@ main div a{
     font-family: var(--fonte-texto);
     text-decoration: none;
     font-size: 16px;
+    
 
     background-color: var(--green);
     padding: 15px 32px;
@@ -131,22 +152,26 @@ main div a{
     font-weight: bolder;
     color: var(--purple-900);
 }
-
+a{
+    font-weight: bolder;
+}
 /* hover efects style in the header.css archive */
 
 
 
 @media screen and (min-width: 760px) {
-    main {
-            padding: 0px 20px;
-            color: var(--purple-900);
-            font-family: var(--fonte-texto);
+    /* SECTION 1 */
     
+        main section#one {
+            padding: 56px, 44px 44px 44px;
+            background-image: url(../assets/images/main/ovalBG-tablet.png);
+
         }
     
-    
-    
-        /* SECTION 1 */
+        main section#last {
+            padding: 0px 44px;
+  
+        }
     
         main img.webApp {
             width: 515px;
@@ -154,122 +179,95 @@ main div a{
             margin-top: -160px;
     
         }
-    
-        main div:nth-child(1) {
-            display: flex;
-            justify-content: center;
-        }
-    
-    
-    
-    
-    
-    
+
+
         div.content {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+
+            flex-direction: row;
+            text-align: left;
     
-            align-items: center;
+            align-items: normal;
             margin-bottom: 32px;
+            padding-right: 44px;
     
         }
-    
-        div.content:first-child {
-            margin-top: 64px;
-        }
+
     
         div.content:last-child {
-            margin-bottom: 64px;
+            padding-bottom: 106px;
+
         }
     
         aside.number {
-            display: grid;
-            place-items: center;
+
     
-            width: 48px;
-            height: 48px;
-            border: 1.5px solid var(--purple-500);
-            border-radius: 50%;
-    
-            margin-bottom: 24px;
+            min-width: 48px;
+            min-height: 48px;
+ 
+            
+            margin: 36px 56px 0px 44px;
+
+            
+            
         }
     
         div.content h2 {
-            font-family: var(--fonte-destaque);
-            font-size: 24px;
-            margin-bottom: 16px;
-            line-height: 120%;
-        }
-    
-        div.content p {
-            font-size: 16px;
-        }
-    
-    
-    
-        /* SECTION 2 */
-    
-        main section img.founder {
-            position: relative;
-            z-index: 1;
-    
-            width: 280px;
-            height: 280px;
-    
-    
-    
-            display: flex;
-            margin: auto;
-    
+            font-size: 28px;
+            margin-bottom: 28px;
     
         }
     
-        main div.about {
-    
-            position: relative;
-            z-index: 2;
-            margin-top: -45px;
-    
-            max-width: 335px;
-            background-color: var(--purple-900);
-            padding: 32px 32px 50px 32px;
-    
-    
-            color: white;
-            font-weight: 200;
-            line-height: 120%;
-    
-            text-align: center;
-    
-            /* margin-bottom: 100px; */
-        }
-    
-        main div.about h2 {
-            font-family: var(--fonte-destaque);
-            font-size: 32px;
-            margin-bottom: 32px;
-        }
-    
-        main div.about p {
-            font-family: var(--fonte-texto);
-            font-size: 16px;
-            padding-bottom: 32px;
-        }
-    
-        main div a {
-            font-family: var(--fonte-texto);
-            text-decoration: none;
-            font-size: 16px;
-    
-            background-color: var(--green);
-            padding: 15px 32px;
-    
-            margin: 0px;
-    
-            font-weight: bolder;
-            color: var(--purple-900);
-        }
-    
-        /* hover efects style in the header.css archive */
+     /* SECTION 2 */
+
+
+    main section img.founder{
+        display: flex; 
+        margin: 0;
+        
+    }
+
+    main div.about{
+
+        position: absolute;
+        right: 0%;
+        margin-right: 44px;
+        padding: 48px;
+        padding-bottom: 50px;
+        
+        margin-top: -110px;
+
+        max-width: 400px;
+        height: 290px;
+        border-radius: 10px;
+
+       
+        
+        text-align: left;
+        
+
+
+        margin-bottom: 200px;
+    }
+
+    main div.about h2{
+        font-size: 48px;
+        margin-bottom: 32px; 
+        
+    }
+    main div.about p{
+        margin-bottom: 32px;
+    }
+
+    main div a{
+        font-size: 18px;
+        
+
+ 
+        
+
+    }
+
+    /* hover efects style in the header.css archive */
+
+   
 }

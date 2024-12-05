@@ -95,6 +95,9 @@ img.background{
             background-image: url(../assets/images/header/oval-tablet.png);
            
         }
+        header h1:nth-child(2) {
+            margin-top: 10px;
+        }
     
         header img.background{
             display: block;
