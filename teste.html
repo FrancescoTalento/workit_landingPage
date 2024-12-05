@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Atrás de uma Div</title>
+    <style>
+        /* Contêiner principal */
+        .container {
+            position: relative;
+            /* Define o contêiner como referência */
+            width: 500px;
+            /* Largura do contêiner */
+            height: 300px;
+            /* Altura do contêiner */
+            border: 1px solid #ccc;
+            /* Apenas para visualização */
+            overflow: hidden;
+            /* Garante que nada ultrapasse o contêiner */
+        }
+
+        /* Imagem de fundo */
+        .background-image {
+            position: absolute;
+            /* Permite posicionamento dentro do contêiner */
+            top: 0;
+            /* Alinha ao topo */
+            left: 0;
+            /* Alinha à esquerda */
+            width: 50px;
+            height: 50px;
+            /* Ocupa toda a largura do contêiner */
+          
+            /* Ocupa toda a altura do contêiner */
+    
+            /* Ajusta a imagem para cobrir o espaço sem distorção */
+            z-index: 1;
+            /* Fica atrás da camada sobreposta */
+        }
+
+        /* Div sobreposta */
+        .overlay {
+            position: absolute;
+            /* Posiciona em relação ao contêiner */
+            top: 0;
+            /* Alinha ao topo */
+            left: 0;
+            /* Alinha à esquerda */
+            width: 100%;
+            /* Ocupa toda a largura do contêiner */
+            height: 100%;
+            /* Ocupa toda a altura do contêiner */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Fundo preto semitransparente */
+            z-index: 2;
+            /* Fica acima da imagem */
+            display: flex;
+            /* Usa Flexbox para centralizar o conteúdo */
+            justify-content: center;
+            /* Centraliza horizontalmente */
+            align-items: center;
+            /* Centraliza verticalmente */
+            color: white;
+            /* Cor do texto */
+            font-size: 24px;
+            /* Tamanho do texto */
+            font-weight: bold;
+            /* Negrito */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="assets/images/image-hero.webp" alt="Imagem de Fundo" class="background-image">
+        <div class="overlay">
+            Texto Sobreposto
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+@charset "UTF_8";
+
+
+    header {
+            background-color: var(--purple-900);
+            height: 480px;
+
+            color: white;
+            font-family: var(--fonte-texto);
+            line-height: 180%;
+            
+            background-image: url(../assets/images/header/oval-mobile.png);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: contain;
+        }
+    
+        header section:nth-child(1) {
+            display: flex;
+            justify-content: space-between;
+            padding: 32px 20px 0px 20px;
+        }
+        
+        header section:nth-child(1) a{
+            color: white;
+            line-height: 180%;
+            font-size: 18px;
+
+            text-decoration-color: var(--green);
+            text-decoration-thickness: 3px;
+            text-underline-offset: 10px;
+        }
+        header section:nth-child(1) a:hover{
+            color: var(--green);
+            transition: 0.3s;
+
+        }
+
+
+
+        header section:nth-child(2){
+            padding: 56px 20px 160px 20px;
+            text-align: center;
+        }
+        
+
+        header h1{
+            font-size: 48px;
+            font-family: var(--fonte-destaque);
+            font-weight: bold;
+       
+        }
+        header h1 strong{
+            box-sizing: border-box;
+            
+            text-decoration: underline;
+            text-decoration-color: var(--green);
+            text-underline-offset: 10px;
+            text-decoration-thickness: 3px;
+     
+        }
+
+        header h1:nth-child(2){
+            padding: 26px 0px 65px 0px;
+        }
+
+        header section:nth-child(2) a{
+            color: var(--purple-900);
+            background-color: var(--green);
+            text-decoration: none;
+            
+            padding: 15px 32px;
+            font-weight: bolder;
+        }
+
+        a.buttom:hover{
+            background-color: var(--purple-900);
+            border: 2px solid var(--green);
+            color: var(--green);
+            transition: 0.4s, border 0s;
+        }
+
+        
+
+
+

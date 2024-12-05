@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+footer{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer img{
+    padding-bottom: 55px;
+}
+
+footer a:nth-child(-n+2){
+    padding-right: 18px;
+
+}
