@@ -89,6 +89,7 @@ img.background{
 
 
     header {
+            position: relative;
             height: 540px;
 
             z-index: 2;
@@ -113,7 +114,7 @@ img.background{
         }
 
         img#right{
-            overflow: hidden;
+           
             left: 92.5%;
             transform: translate();
             margin-top: -220px;

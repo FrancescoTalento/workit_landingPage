@@ -29,6 +29,9 @@ main img.webApp {
     width: 320px;
     height: 185px;
     margin-top: -104px;
+    
+    position: relative;
+    z-index: 3;
 
 }
 
@@ -186,11 +189,12 @@ a{
 
 
         div.content {
-
+            
             flex-direction: row;
             text-align: left;
     
-            align-items: normal;
+            align-items: center;
+            
             margin-bottom: 32px;
             padding-right: 44px;
             
@@ -204,12 +208,12 @@ a{
     
         aside.number {
 
-    
+            
             min-width: 48px;
             min-height: 48px;
  
             
-            margin: 36px 56px 0px 44px;
+            margin: 0px 56px 0px 24px;
 
             
             
