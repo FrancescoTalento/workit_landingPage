@@ -23,3 +23,49 @@ footer nav img:hover{
     transform: scale(110%);
     transition: 0.3s;
 }
+
+
+@media screen and (min-width: 760px) {
+    footer {
+        position: relative;
+        z-index: 2;
+            padding: 80px;
+            margin-top: 285px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    
+            background-color: white; */
+        }
+
+        img.background{
+            display: block;
+            
+            position: absolute;
+            z-index: 1;
+            margin-top: -270px;
+            left: 100%;
+            transform: translate(-130%);
+            
+        }
+/*     
+        footer img {
+            padding-bottom: 55px;
+        }
+    
+        footer a:nth-child(-n+2) {
+            padding-right: 18px;
+    
+        }
+        
+    
+        footer nav img:hover {
+            transform: scale(110%);
+            transition: 0.3s;
+        } */
+
+        footer a{
+            z-index: 2;
+        }
+}

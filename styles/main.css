@@ -4,7 +4,7 @@ main{
 
     color: var(--purple-900);
     font-family: var(--fonte-texto);
-    
+    background-color: var(--purple-100);
 }
 
 
@@ -109,8 +109,11 @@ main section img.founder{
 main div.about{
 
     position: relative;
+    left: 50%;
+    transform: translate(-50%);
     z-index: 2;
     margin-top: -45px;
+    
 
     max-width: 335px;
     background-color: var(--purple-900);
@@ -170,6 +173,7 @@ a{
     
         main section#last {
             padding: 0px 44px;
+            background-color: white;
   
         }
     
@@ -189,7 +193,7 @@ a{
             align-items: normal;
             margin-bottom: 32px;
             padding-right: 44px;
-    
+            
         }
 
     
@@ -230,6 +234,10 @@ a{
 
         position: absolute;
         right: 0%;
+
+        left: auto;
+        transform: translate(0%);
+
         margin-right: 44px;
         padding: 48px;
         padding-bottom: 50px;
