@@ -48,3 +48,31 @@ footer nav img:hover{
             z-index: 2;
         }
 }
+
+@media screen and (min-width: 1200px) {
+
+    footer {
+        /* position: relative;
+        z-index: 2;
+        padding: 0px; */
+        margin: 112px 80px;
+        }
+
+    footer img.background{
+            /* display: block; */
+            
+            position: relative;
+            left: 0%;
+            transform: translate(0%);
+            /* z-index: 1; */
+            
+            margin-top: -425px;
+            margin-right: -700px;
+            
+        }
+
+        /* footer a{
+            z-index: 2;
+        } */
+
+}

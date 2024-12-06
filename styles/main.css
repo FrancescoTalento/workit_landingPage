@@ -86,6 +86,7 @@ div.content h2{
 
 div.content p{
     font-size: 16px;
+    line-height: 180%;
 }
 
 
@@ -282,4 +283,141 @@ a{
     /* hover efects style in the header.css archive */
 
    
+}
+
+
+@media screen and (min-width: 1200px) {
+    /* SECTION 1 */
+    
+        main section#one {
+        
+            background-image: url(../assets/images/main/ovalBG-desktop.png);
+            
+            padding: 0px 108px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    
+        main section#last {
+            padding: 112px 140px 0px 140px;
+           
+    
+        }
+    
+        main img.webApp {
+            width: 750px;
+            height: 440px;
+            margin-top: -270px;
+    
+        }
+    
+    
+        div.content {
+    
+            flex-direction: column;
+            text-align: center;
+            
+            align-items: center;
+    
+            margin-bottom: 0px;
+            padding: 88px 32px 216px 32px;
+
+            max-width: 350px;
+    
+        }
+        
+        div.content:first-child{
+            margin-top: 0px;
+        }
+        
+        div.content:last-child {
+            padding-bottom: 216px;
+    
+        }
+    
+        aside.number {
+    
+    
+            min-width: 56px;
+            min-height: 56px;
+    
+    
+            margin: 0px 0px 56px 0px;
+    
+    
+    
+        }
+    
+        div.content h2 {
+            font-size: 32px;
+            /* margin-bottom: 28px; */
+    
+        }
+
+        div.content p{
+            font-size: 18px;
+        }
+
+    /* SECTION 2 */
+    
+    section#last{
+        display: grid;
+        place-content: center;
+    }
+
+    main section img.founder{
+        /* display: flex; 
+        margin: 0; */
+
+        z-index: 2;
+        width: 480px;
+        height: 480px;
+        padding-top: 0px;
+        
+    }
+
+    main div.about{
+
+        position: relative;
+        right: 0%;
+
+        left: 0%;
+        transform: translate(0);
+
+        margin-right: 0px;
+        margin-left: 380px;
+        
+        margin-top: -320px;
+        margin-bottom: 0px;
+        
+        max-width: 580px;
+        max-height: 400px;
+        
+        
+        padding: 64px;
+        padding-bottom: 30px;
+        padding-top: 70px;
+        border-radius: 0px;
+
+
+    }
+
+    main div.about h2{
+        font-size: 58px;
+        margin-bottom: 52px; 
+        margin-top: 20px;
+        
+    }
+    main div.about p{
+        margin-bottom: 20px;
+        font-size: 17px
+    }
+
+
+
+    /* hover efects style in the header.css archive */
+
 }

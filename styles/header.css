@@ -148,3 +148,63 @@ img.background{
 
 
 
+@media screen and (min-width: 1200px){
+    header {
+            /* position: relative; */
+            height: 700px;
+    
+            /* z-index: 2; */
+            background-image: url(../assets/images/header/oval-desktop.png);
+            
+    
+        }
+    
+        header h1:nth-child(2) {
+            margin-top: 25px;
+        }
+    
+        /* header img.background {
+            display: block;
+            position: absolute;
+            z-index: 1;
+    
+        } */
+    
+        img#left {
+            top: 100px;
+            left: 0%;
+    
+        }
+    
+        img#right {
+    
+            left: 93.2%;
+            /* transform: translate(); */
+            margin-top: -190px;
+        }
+    
+        header section:nth-child(1) {
+            padding: 56px 140px 0px 140px;
+            
+        }
+    
+    
+        header section:nth-child(2) {
+            padding: 56px 20px 160px 20px;
+            /* text-align: center; */
+        }
+    
+    
+        header h1 {
+            font-size: 80px;
+    
+        }
+    
+        /* header h1:nth-child(2) {
+            padding: 26px 0px 65px 0px;
+        } */
+    
+        /* header section:nth-child(2) a {
+            font-size: 18px;
+        } */
+}
